@@ -1,0 +1,15 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        FileExtensionsManager mgr = new FileExtensionsManagerImpl();
+        LogFilenameValidator logFilenameValidator = new LogFilenameValidator(mgr);
+
+        String filename = "logfile.tx";
+        if (logFilenameValidator.isValidLogFilename(filename)) {
+            System.out.println(filename + " is a valid log file name.");
+        } else {
+            System.out.println(filename + " is NOT a valid log file name.");
+        }
+    }
+}
