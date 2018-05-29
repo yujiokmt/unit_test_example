@@ -1,3 +1,5 @@
+package com.example.jnit;
+
 public class LogFilenameValidator {
 
     FileExtensionsManager file_ext_manager;

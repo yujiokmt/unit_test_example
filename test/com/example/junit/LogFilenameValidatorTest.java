@@ -1,3 +1,7 @@
+package com.example.junit;
+
+import com.example.jnit.FileExtensionsManager;
+import com.example.jnit.LogFilenameValidator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
