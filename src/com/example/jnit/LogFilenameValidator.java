@@ -2,7 +2,7 @@ package com.example.jnit;
 
 public class LogFilenameValidator {
 
-    FileExtensionsManager file_ext_manager;
+    private FileExtensionsManager file_ext_manager;
 
     public LogFilenameValidator(FileExtensionsManager mgr) {
         file_ext_manager = mgr;

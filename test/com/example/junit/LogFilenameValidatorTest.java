@@ -1,6 +1,5 @@
 package com.example.junit;
 
-import com.example.jnit.FileExtensionsManager;
 import com.example.jnit.LogFilenameValidator;
 import org.junit.After;
 import org.junit.Before;
@@ -18,13 +17,11 @@ import static junit.framework.TestCase.assertTrue;
  */
 public class LogFilenameValidatorTest {
 
-    FileExtensionsManager mgr = new StubFileExtensionsManagerImpl();
-    LogFilenameValidator logFilenameValidator;
+    private LogFilenameValidator logFilenameValidator;
 
     @Before
     public void before() throws Exception {
-        mgr = new StubFileExtensionsManagerImpl();
-        logFilenameValidator = new LogFilenameValidator(mgr);
+        logFilenameValidator = new LogFilenameValidator(new StubFileExtensionsManagerImpl());
     }
 
     @After

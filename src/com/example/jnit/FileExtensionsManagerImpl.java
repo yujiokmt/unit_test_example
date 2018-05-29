@@ -10,7 +10,6 @@ import java.util.List;
 public class FileExtensionsManagerImpl implements FileExtensionsManager {
     @Override
     public boolean isValid(String extension) {
-        FileReader file_reader = null;
         List<String> valid_extensions_list = new ArrayList<String>();
         try {
             File file = new File("config.txt");
@@ -21,13 +20,9 @@ public class FileExtensionsManagerImpl implements FileExtensionsManager {
             }
             in.close();
         } catch (IOException e) {
-            System.out.println(e);
+            // handle the exception
         }
 
-        if (valid_extensions_list.contains(extension)) {
-            return true;
-        } else {
-            return false;
-        }
+        return valid_extensions_list.contains(extension);
     }
 }
