@@ -32,8 +32,8 @@ public class LogFilenameValidatorTest {
      * Method: isValidLogFilename(String filename)
      */
     @Test
-    public void shouldReturnTrueOnValidFilename() throws Exception {
-        assertTrue("should've returned true for a valid filename",
+    public void isValidLogFilename_shouldReturnTrue_givenValidFilename() throws Exception {
+        assertTrue("Calling isValidLogFilename() with a valid filename should have returned true.",
                 logFilenameValidator.isValidLogFilename("filename.txt"));
     }
 
@@ -41,8 +41,8 @@ public class LogFilenameValidatorTest {
      * Method: isValidLogFilename(String filename)
      */
     @Test
-    public void shouldReturnFalseOnInvalidFilename() throws Exception {
-        assertFalse("should've returned false for an invalid filename",
+    public void isValidLogFilename_shouldReturnFalse_givenInvalidFilename() throws Exception {
+        assertFalse("Calling isValidLogFilename() with an invalid filename should have returned false.",
                 logFilenameValidator.isValidLogFilename("log.txt"));
     }
 }
