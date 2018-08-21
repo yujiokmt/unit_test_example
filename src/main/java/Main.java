@@ -1,6 +1,8 @@
-import com.example.jnit.FileExtensionsManager;
-import com.example.jnit.FileExtensionsManagerImpl;
-import com.example.jnit.LogFilenameValidator;
+package main.java;
+
+import main.java.util.FileExtensionsManager;
+import main.java.util.FileExtensionsManagerImpl;
+import main.java.util.LogFilenameValidator;
 
 public class Main {
 

@@ -1,6 +1,6 @@
-package com.example.junit;
+package test.java.util;
 
-import com.example.jnit.LogFilenameValidator;
+import main.java.util.LogFilenameValidator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -43,6 +43,6 @@ public class LogFilenameValidatorTest {
     @Test
     public void isValidLogFilename_shouldReturnFalse_givenInvalidFilename() throws Exception {
         assertFalse("Calling isValidLogFilename() with an invalid filename should have returned false.",
-                logFilenameValidator.isValidLogFilename("log.txt"));
+                logFilenameValidator.isValidLogFilename("somelog.txt"));
     }
 }

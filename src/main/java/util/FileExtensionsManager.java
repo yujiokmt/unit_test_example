@@ -1,4 +1,4 @@
-package com.example.jnit;
+package main.java.util;
 
 public interface FileExtensionsManager {
 

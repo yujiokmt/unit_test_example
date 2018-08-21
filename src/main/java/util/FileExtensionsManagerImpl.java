@@ -1,4 +1,4 @@
-package com.example.jnit;
+package main.java.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileExtensionsManagerImpl implements FileExtensionsManager {
-    @Override
+
     public boolean isValid(String extension) {
         List<String> valid_extensions_list = new ArrayList<String>();
         try {

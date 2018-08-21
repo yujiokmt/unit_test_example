@@ -1,9 +1,9 @@
-package com.example.junit;
+package test.java.util;
 
-import com.example.jnit.FileExtensionsManager;
+import main.java.util.FileExtensionsManager;
 
 public class StubFileExtensionsManagerImpl implements FileExtensionsManager {
-    @Override
+
     public boolean isValid(String extension) {
         return true;
     }
