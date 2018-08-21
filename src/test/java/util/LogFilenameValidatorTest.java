@@ -43,6 +43,6 @@ public class LogFilenameValidatorTest {
     @Test
     public void isValidLogFilename_shouldReturnFalse_givenInvalidFilename() throws Exception {
         assertFalse("Calling isValidLogFilename() with an invalid filename should have returned false.",
-                logFilenameValidator.isValidLogFilename("somelog.txt"));
+                logFilenameValidator.isValidLogFilename("log.txt"));
     }
 }
