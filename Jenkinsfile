@@ -4,15 +4,9 @@ pipeline {
         maven 'M3'
     }
     stages {
-        stage ('Initialize') {
-            steps {
-                sh 'mvn clean'
-            }
-        }
-
         stage ('Build') {
             steps {
-                sh 'mvn compile'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
 
@@ -27,9 +21,9 @@ pipeline {
             }
         }
 
-        stage ('Package') {
+        stage ('Deploy') {
             steps {
-                sh 'mvn package'
+                echo 'deploy the package'
             }
         }
     }
